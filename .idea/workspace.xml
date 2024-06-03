@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12484d7d-035a-4cc5-b481-a2c522fa8867" name="Changes" comment="X" />
+    <list default="true" id="12484d7d-035a-4cc5-b481-a2c522fa8867" name="Changes" comment="X">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_5/Q.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_5/Q.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,10 +55,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/DSA/src/Main.java&quot;
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/user/IdeaProjects/DSA/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Q">
+  <component name="RunManager" selected="Application.Assignments.Assignment_4.Q">
     <configuration name="Assign_QH3" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignments.Assignment_2.Assign_QH3" />
       <extension name="coverage">
@@ -148,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q" />
         <item itemvalue="Application.Assignments.Assignment_4.Q" />
+        <item itemvalue="Application.Q" />
         <item itemvalue="Application.Assignments.Assignment_4.Q (2)" />
         <item itemvalue="Application.Assignments.Assignment_4.Q (1)" />
         <item itemvalue="Application.CustomQueue" />
@@ -181,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717378414383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="X">
+      <option name="closed" value="true" />
+      <created>1717378820614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717378820614</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,20 +210,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="X" />
     <option name="LAST_COMMIT_MESSAGE" value="X" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Assignments/Assignment_4/Q.java</url>
-          <line>166</line>
-          <properties class="Assignments.Assignment_4.Q" method="sort">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

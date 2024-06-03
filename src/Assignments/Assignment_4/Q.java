@@ -34,7 +34,7 @@ public class Q {
                 q.marks = j;
                 p.next = q;
                 p = q;
-                System.out.println("Do you want to add more elements(yes(1)|no(0): ");
+                System.out.println("Do you want to add more elements(y|n): ");
                  l = sc.next().charAt(0);
                  size++;
             }
@@ -168,7 +168,7 @@ public class Q {
         for (int i = 0; i < size - 1; i++) {
             Node n = start;
             Node p = n.next;
-            for (int j = 0; j < size - i - 1 ; j++) {
+            for (int j = 1; j < size - i -1 ; j++) {
                 if (n.marks < p.marks) {
                     float temp = n.marks;
                     n.marks = p.marks;

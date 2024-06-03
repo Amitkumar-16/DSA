@@ -8,7 +8,7 @@ class Node{
 }
 public class Q {
       static int size = 0;
-   static Node start = null;
+    static Node start = null;
     static Node end = null;
     static Node create(Node start,Node end){
        Scanner sc = new Scanner(System.in);
