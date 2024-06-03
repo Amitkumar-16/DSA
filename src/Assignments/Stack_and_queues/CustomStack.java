@@ -1,67 +1,51 @@
-package Lectures.DSA.Stack_and_queues;
+package Assignments.Stack_and_queues;
 import java.util.Scanner;
 public class CustomStack {
-    protected int[] data;
-    private static final int DEFAULT_SIZE = 10;
-    int ptr = -1;
-
-    public CustomStack() {
-        this(DEFAULT_SIZE);
-    }
-
-    public CustomStack(int size) {
-        this.data = new int[size];
-    }
-
-    public boolean push(int item) {
-        if (isFull()) {
+    public static final int Max = 10;
+    public int push(int[] s,int top) {
+        Scanner sc = new Scanner(System.in);
+        if (isFull(top)) {
             System.out.println("Stack is full");
-            return false;
+            return top;
         }
-        ptr++;
-        data[ptr] = item;
-        return true;
+        System.out.println("Enter an item: ");
+        int item = sc.nextInt();
+        top++;
+        s[top] = item;
+        return top;
     }
-
-    public boolean isFull() {
-        return ptr == data.length - 1;
+    public static boolean isFull(int top) {
+        return top == Max-1;
     }
-
-    public boolean isEmpty() {
-        return ptr == -1;
+    public static boolean isEmpty(int top) {
+        return top == -1;
     }
-
-    public int pop() throws Exception {
-        if (isEmpty()) {
-            throw new Exception("Stack is empty");
+    public int pop(int s[],int top){
+        if (isEmpty(top)) {
+            System.out.println("Stack is empty");
+            return top;
         }
-        int removed = data[ptr];
-        ptr--;
-        return removed;
+        int removed = s[top];
+        System.out.println("Removed item: " + removed);
+         top--;
+        return top;
     }
-
-    public int peek() throws Exception {
-        if (isEmpty()) {
-            throw new Exception("Can not peek from an empty Stack");
-        }
-        return data[ptr];
-    }
-
-    public void display() {
-        if (isEmpty()) {
+     public void display(int s[],int top) {
+        if (isEmpty(top)) {
             System.out.println("Your stack is empty");
         } else {
-            for (int i = ptr; i >= 0; i++) {
-                System.out.println(data[i]);
+            for (int i = top; i >= 0; i--) {
+                System.out.println(s[i]);
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter size of stack: ");
-        int a = sc.nextInt();
-        dynamicStack k = new dynamicStack(a);
+        int max = sc.nextInt();
+        int [] arr = new int[Max];
+        int top = -1;
+       CustomStack k = new CustomStack();
         while (true) {
             System.out.println("***MENU***");
             System.out.println("0: Exit");
@@ -76,49 +60,23 @@ public class CustomStack {
                 case 0:
                     System.exit(0);
                 case 1:
-                    System.out.println("Enter an item: ");
-                    int item = sc.nextInt();
-                    k.push(item);
+                   top = k.push(arr,top);
                     break;
                 case 2:
-                    try {
-                        System.out.println("Removed item: " + k.pop());
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
+                   top = k.pop(arr,top);
                     break;
                 case 3:
-                    k.isFull();
+                    System.out.println(isFull(top));
                     break;
                 case 4:
-                    k.isEmpty();
+                    System.out.println(isEmpty(top));
                     break;
                 case 5:
-                    k.display();
+                    k.display(arr,top);
                     break;
                 default:
                     System.out.println("Invalid choice");
             }
         }
-    }
-}
-class dynamicStack extends CustomStack{
-    public dynamicStack(){
-        super();
-    }
-    public dynamicStack(int size){
-        super(size);
-    }
-    @Override
-    public boolean push(int item) {
-        if(this.isFull()){
-            int [] temp = new int[data.length*2];
-            // increase the size
-            for(int i = 0; i <data.length ; i++){
-                temp[i]=data[i];
-            }
-            data = temp;
-        }
-        return super.push(item);
     }
 }

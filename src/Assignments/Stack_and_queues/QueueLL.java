@@ -21,10 +21,13 @@ public class QueueLL {
         if(front==null){
             rear = null;
             System.out.println("Your list is empty");
+            return rear;
         }
-        System.out.println("Removed: " + front.data);
-        front = front.next;
-        return front;
+        else {
+            System.out.println("Removed: " + front.data);
+            front = front.next;
+            return front;
+        }
     }
     public static void display(Node rear, Node front){
         while(front!=null){
@@ -33,7 +36,8 @@ public class QueueLL {
         }
     }
     public static void main(String[] args) {
-     Node rear = null,front = null;
+     Node rear = null;
+     Node front = null;
         front=insert(rear,front);
         front=delete(rear,front);
         display(rear,front);

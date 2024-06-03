@@ -1,55 +1,61 @@
 package Assignments.Stack_and_queues;
 import java.util.Scanner;
 public class CustomQueue {
-        protected int [] data;
-        private static final int Default_Size = 10;
-        int end = - 1;
-        public CustomQueue(){
-            this(Default_Size);
-        }
-        public CustomQueue(int size){
-            this.data = new int [size];
-        }
-        public boolean push(int item){
-            if(isFull()){
-                return false;
+        public static final int MAX = 5;
+        public static int front = -1;
+        public static int rear = -1;
+        public static void insert(int Q[]){
+            Scanner sc = new Scanner(System.in);
+            if(is_Full()){
+                System.out.println("is_Full");
             }
             else{
-                end++;
-                data[end] = item;
+               if(front==-1){
+                   front++;
+                   rear++;
+                   System.out.println("Enter Element: ");
+                   Q[front]=sc.nextInt();
+               }
+               else{
+                   rear++;
+                   System.out.println("Enter Element: ");
+                   Q[rear]=sc.nextInt();
+               }
             }
-            return true;
         }
-        public boolean isFull(){
-            return end == data.length - 1;
+        public static boolean is_Full(){
+            return rear == MAX - 1;
         }
-        public boolean isEmpty(){
-            return end == -1;
+        public static boolean is_empty(){
+            return rear == -1;
         }
-        public int pop() throws Exception{
-            if(isFull()){
-                throw new Exception("Your queue is full");
+        public static void delete(int Q[]) {
+            if (is_empty()) {
+                System.out.println("Your list is empty");
             }
-            int removed = data[0];
-            for(int i = 1; i <=end ;i++){
-                data[i-1]=data[i];
+            else {
+                int removed = Q[0];
+                System.out.println("Removed item: " + removed);
+                for (int i = 1; i <= rear; i++) {
+                    Q[i - 1] = Q[i];
+                }
+                rear--;
             }
-            return removed;
         }
-        public void display(){
-            if(isEmpty()){
-                System.out.println("Your stack is empty");
+        public static void display(int Q[]){
+            if(is_empty()){
+                System.out.println("Your Queue is empty");
             }
             else{
-                for(int i = end ; i>=0 ; i--){
-                    System.out.println(data[i]);
+                for(int i = front ; i<=(MAX - 1) ; i++){
+                    System.out.println(Q[i]);
                 }
             }
         }
 
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
-            CustomQueue k = new CustomQueue(10);
+            int queue[] = new int[MAX];
             while (true) {
                 System.out.println("***MENU***");
                 System.out.println("0: Exit");
@@ -64,26 +70,19 @@ public class CustomQueue {
                     case 0:
                         System.exit(0);
                     case 1:
-                        System.out.println("Enter an item: ");
-                        int item = sc.nextInt();
-                        k.push(item);
+                        insert(queue);
                         break;
                     case 2:
-                        try{
-                            System.out.println("Removed item: " + k.pop());
-                        }
-                        catch(Exception e){
-                            System.out.println(e.getMessage());
-                        }
+                        delete(queue);
                         break;
                     case 3:
-                        k.isFull();
+                        System.out.println(is_Full());
                         break;
                     case 4:
-                        k.isEmpty();
+                        System.out.println(is_empty());
                         break;
                     case 5:
-                        k.display();
+                        display(queue);
                         break;
                     default:
                         System.out.println("Invalid choice");

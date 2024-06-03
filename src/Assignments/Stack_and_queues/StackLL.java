@@ -1,5 +1,12 @@
 package Assignments.Stack_and_queues;
 import java.util.Scanner;
+//class Node{
+//    int info;
+//    Node next;
+//    public Node(int a){
+//        this .info=a;
+//    }
+//}
 public class StackLL {
     public static Node push(Node top){
          Scanner sc = new Scanner(System.in);
@@ -25,8 +32,30 @@ public class StackLL {
     }
     public static void main(String[] args) {
         Node top = null;
-        top = push(top);
-        top = pop(top); // ye top bahar he jis se ye update nhi hoga
-        display(top);   //  ...is liye "top = " kia gya h
+        Scanner sc = new Scanner(System.in);
+        CustomStack k = new CustomStack();
+        while (true) {
+            System.out.println("***MENU***");
+            System.out.println("0: Exit");
+            System.out.println("1: Push");
+            System.out.println("2: Pop");
+            System.out.println("3: Display");
+            System.out.println("Enter your choice");
+            int choice = sc.nextInt();
+            switch (choice) {
+                case 0:
+                    System.exit(0);
+                case 1:
+                    top = push(top);
+                    break;
+                case 2:
+                    top = pop(top); // ye top bahar he jis se ye update nhi hoga
+                    break;
+                case 3:
+                    display(top);   //  ...is liye "top = " kia gya h                    break;
+                default:
+                    System.out.println("Invalid choice");
+            }
+        }
     }
 }
