@@ -77,7 +77,6 @@ public class Q {
                  temp.next = s;
              }
              return  start;
-
          }
          public static Node InAny(Node start){
            Scanner sc = new Scanner(System.in);
@@ -168,7 +167,7 @@ public class Q {
         for (int i = 0; i < size - 1; i++) {
             Node n = start;
             Node p = n.next;
-            for (int j = 1; j < size - i -1 ; j++) {
+            for (int j = 0; j < size - i -1 ; j++) {
                 if (n.marks < p.marks) {
                     float temp = n.marks;
                     n.marks = p.marks;

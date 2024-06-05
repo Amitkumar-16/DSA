@@ -1,17 +1,10 @@
 package Assignments.Stack_and_queues;
 import java.util.Scanner;
-//class Node{
-//    int info;
-//    Node next;
-//    public Node(int a){
-//        this .info=a;
-//    }
-//}
 public class StackLL {
     public static Node push(Node top){
          Scanner sc = new Scanner(System.in);
-       int a = sc.nextInt();
-        Node temp = new Node(a);
+        Node temp = new Node();
+        temp.data= sc.nextInt();
         temp.next=top;
         top = temp;
         return top;

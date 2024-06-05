@@ -1,12 +1,11 @@
 package Assignments.Stack_and_queues;
-
 import java.util.Scanner;
 
 public class QueueLL {
     public static Node insert (Node rear, Node front){
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        Node temp = new Node(a);
+        Node temp = new Node();
+        temp.data = sc.nextInt();
         if(rear==null) {
             rear = temp;
             front = temp;
@@ -21,7 +20,7 @@ public class QueueLL {
         if(front==null){
             rear = null;
             System.out.println("Your list is empty");
-            return rear;
+            return front;
         }
         else {
             System.out.println("Removed: " + front.data);
