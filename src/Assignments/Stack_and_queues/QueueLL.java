@@ -6,15 +6,16 @@ public class QueueLL {
         Scanner sc = new Scanner(System.in);
         Node temp = new Node();
         temp.data = sc.nextInt();
-        if(rear==null) {
+        if(front==null) {
             rear = temp;
             front = temp;
+            return front;
         }
         else{
             rear.next=temp;
             rear=temp;
         }
-        return front;
+        return rear;
     }
     public static Node delete (Node rear, Node front){
         if(front==null){
@@ -50,7 +51,14 @@ public class QueueLL {
                 case 0:
                     System.exit(0);
                 case 1:
-                    front=insert(rear,front);
+                    if (front==null) {
+                        front = insert(rear, front);
+                        rear=front;
+                    }
+                    else {
+                        rear=insert(rear,front);
+                    }
+
                     break;
                 case 2:
                     front=delete(rear,front);

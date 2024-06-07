@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12484d7d-035a-4cc5-b481-a2c522fa8867" name="Changes" comment="X">
-      <change afterPath="$PROJECT_DIR$/src/Assignments/Assignment_3/x.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_4/Q.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_4/Q.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/QueueLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/QueueLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/StackLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/StackLL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,7 @@
     "Application.CustomQueue.executor": "Run",
     "Application.CustomStack.executor": "Run",
     "Application.Q.executor": "Run",
+    "Application.QueueLL.executor": "Run",
     "Application.x.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -66,25 +63,12 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.x">
+  <component name="RunManager" selected="Application.QueueLL">
     <configuration name="Assign_QH3" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignments.Assignment_2.Assign_QH3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Assignments.Assignment_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assignments.Assignment_4.Q (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Assignments.Assignment_4.Q" />
-      <module name="Caesar_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Assignments.Assignment_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,6 +115,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QueueLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignments.Stack_and_queues.QueueLL" />
+      <module name="Caesar_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assignments.Stack_and_queues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="x" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignments.Assignment_3.x" />
       <module name="Caesar_2" />
@@ -159,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueueLL" />
         <item itemvalue="Application.x" />
         <item itemvalue="Application.Assignments.Assignment_4.Q" />
         <item itemvalue="Application.Q" />
         <item itemvalue="Application.Assignments.Assignment_4.Q (2)" />
-        <item itemvalue="Application.Assignments.Assignment_4.Q (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717418406742</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="X">
+      <option name="closed" value="true" />
+      <created>1717613709182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717613709182</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
