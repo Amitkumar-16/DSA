@@ -2,7 +2,7 @@ package Assignments.Assignment_3;
 import java.util.Scanner;
 public class Q8 {
     public static int b (int k,int r){
-        if(r!=0)
+        if(r>0)
             return k * b(k,r-1);
         else
             return 1;

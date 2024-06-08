@@ -7,7 +7,7 @@ class Node{
     Node prev;
 }
 public class Q {
-      static int size = 0;
+    static int size = 0;
     static Node start = null;
     static Node end = null;
     static Node create(Node start,Node end){
@@ -16,7 +16,6 @@ public class Q {
          int k = sc.nextInt();
         System.out.print("Enter marks: ");
          int s = sc.nextInt();
-
         Node p = new Node();
         p.regd_no = k;
         p.marks = s;
@@ -31,6 +30,49 @@ public class Q {
             System.out.print("Enter marks: ");
              s = sc.nextInt();
             Node q = new Node();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             q.regd_no = k;
             q.marks = s;
 

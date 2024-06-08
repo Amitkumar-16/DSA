@@ -13,9 +13,8 @@ public class Q10 {
             return a;
         } else if (k==2) {
             return b;
-        } else{
-            return c;
         }
+        return 0;
     }
     /*
     static int fibonacci(int a){

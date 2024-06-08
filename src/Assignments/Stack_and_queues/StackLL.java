@@ -12,6 +12,7 @@ public class StackLL {
     public static Node pop(Node top){
         if(top==null){
             System.out.println("You list is null");
+            return top;
         }
         System.out.println("Removed item: " + top.data);
         top = top.next;
@@ -26,7 +27,6 @@ public class StackLL {
     public static void main(String[] args) {
         Node top = null;
         Scanner sc = new Scanner(System.in);
-        CustomStack k = new CustomStack();
         while (true) {
             System.out.println("***MENU***");
             System.out.println("0: Exit");
