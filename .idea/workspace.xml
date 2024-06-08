@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12484d7d-035a-4cc5-b481-a2c522fa8867" name="Changes" comment="X">
-      <change afterPath="$PROJECT_DIR$/src/Assignments/Assignment_3/y.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_3/Q8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Assignment_5/Q.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Assignment_5/Q.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/StackLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Stack_and_queues/StackLL.java" afterDir="false" />
-    </list>
+    <list default="true" id="12484d7d-035a-4cc5-b481-a2c522fa8867" name="Changes" comment="X" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +50,7 @@
     "Application.Assignments.Assignment_4.Q.executor": "Run",
     "Application.CustomQueue.executor": "Run",
     "Application.CustomStack.executor": "Run",
+    "Application.Method_Overriding.executor": "Run",
     "Application.Q.executor": "Run",
     "Application.Q10.executor": "Run",
     "Application.Q8.executor": "Run",
@@ -72,7 +65,7 @@
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.y">
+  <component name="RunManager" selected="Application.Method_Overriding">
     <configuration name="Assign_QH3" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignments.Assignment_2.Assign_QH3" />
       <extension name="coverage">
@@ -85,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Assignments.Stack_and_queues.CustomStack" />
+    <configuration name="Method_Overriding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lectures.JAVA.Method_Overriding" />
       <module name="Caesar_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Assignments.Stack_and_queues.*" />
+          <option name="PATTERN" value="Lectures.JAVA.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Method_Overriding" />
         <item itemvalue="Application.y" />
         <item itemvalue="Application.Q8" />
         <item itemvalue="Application.Q10" />
         <item itemvalue="Application.StackLL" />
-        <item itemvalue="Application.CustomStack" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717760047839</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="X">
+      <option name="closed" value="true" />
+      <created>1717839795609</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717839795609</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

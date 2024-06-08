@@ -19,7 +19,7 @@ class Child extends Parent{
     }
     int l =20;
 }
-abstract class Parent2 extends Parent{ // isko bulaega kese lawde pata nhi
+abstract class Parent2 extends Parent{ // isko bulaega kese pata nhi
     public void Parent1(){
         System.out.println("I am from abstract class");
     }
